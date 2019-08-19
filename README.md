@@ -1,7 +1,7 @@
 # Microblog
 
 ## Features
-* Users can sign up.
+* Users can login.
 * Users can write multiple posts
 
 ## Requirements and Installation
@@ -39,16 +39,18 @@ flask run
 navigate to localhost:3000 to view the application
 ```
 
- ```
 ## Technologies 
 
 ### Backend
 
 * [Python-Flask](http://flask.pocoo.org/) Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions
-* [Jinja](https://palletsprojects.com/p/jinja/)inja2 is a full-featured template engine for Python. It has full unicode support, an optional integrated sandboxed execution environment, widely used and BSD licensed.
+
 * [SQLAlchemy](https://www.sqlalchemy.org/) SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL.
+
 * [SQLite](https://www.sqlite.org/index.html) SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine
 
+### Frontend
+* [Jinja](https://palletsprojects.com/p/jinja/)is a full-featured template engine for Python. It has full unicode support, an optional integrated sandboxed execution environment, widely used and BSD licensed.
 
 ### Style Guide
 * coming soon
