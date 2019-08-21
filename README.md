@@ -3,6 +3,7 @@
 ## Features
 * Users can signup.
 * Users can login.
+* Users can have a profile they can update.
 
 ## Requirements and Installation
 **Via Cloning The Repository**
