@@ -1,8 +1,8 @@
 # Microblog
 
 ## Features
+* Users can signup.
 * Users can login.
-* Users can write multiple posts
 
 ## Requirements and Installation
 **Via Cloning The Repository**
