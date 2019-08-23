@@ -38,6 +38,9 @@ flask run
 
 #View the application
 navigate to localhost:3000 to view the application
+
+#email test 
+run  `python -m smtpd -n -c DebuggingServer localhost:8025` on another terminal
 ```
 
 ## Technologies 
