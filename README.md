@@ -29,8 +29,6 @@ source venv/bin/activate
 # create and setup .env file according to .env.exampl
 
 # Run migrations
-python manage.py db init
-python manage.py db migrate
 python manage.py db upgrade 
 
 #Start the application
@@ -41,6 +39,9 @@ navigate to localhost:3000 to view the application
 
 #email test 
 run  `python -m smtpd -n -c DebuggingServer localhost:8025` on another terminal
+
+# run tests 
+python tests.py
 ```
 
 ## Technologies 
