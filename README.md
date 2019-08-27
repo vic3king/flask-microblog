@@ -3,7 +3,9 @@
 ## Features
 * Users can signup.
 * Users can login.
-* Users can have a profile they can update.
+* Users can view their profile and they can update.
+* Users can follow and unfollow each other
+* support to receive email/error logs for bugs while in production and development
 
 ## Requirements and Installation
 **Via Cloning The Repository**
@@ -29,18 +31,20 @@ source venv/bin/activate
 # create and setup .env file according to .env.exampl
 
 # Run migrations
-python manage.py db init
-python manage.py db migrate
 python manage.py db upgrade 
 
 #Start the application
 flask run
 
 #View the application
-navigate to localhost:3000 to view the application
+navigate to localhost:5000 to view the application
 
-#email test 
+#to test email bug reporting locally
 run  `python -m smtpd -n -c DebuggingServer localhost:8025` on another terminal
+hit a bug
+
+# run tests 
+python tests.py
 ```
 
 ## Technologies 
@@ -54,7 +58,7 @@ run  `python -m smtpd -n -c DebuggingServer localhost:8025` on another terminal
 * [SQLite](https://www.sqlite.org/index.html) SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine
 
 ### Frontend
-* [Jinja](https://palletsprojects.com/p/jinja/)is a full-featured template engine for Python. It has full unicode support, an optional integrated sandboxed execution environment, widely used and BSD licensed.
+* [Jinja](https://palletsprojects.com/p/jinja/) is a full-featured template engine for Python. It has full unicode support, an optional integrated sandboxed execution environment, widely used and BSD licensed.
 
 ### Style Guide
 * coming soon
