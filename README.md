@@ -6,6 +6,7 @@
 * Users can view their profile and they can update.
 * Users can follow and unfollow each other
 * support to receive email/error logs for bugs while in production and development
+* Users can reset their passwords via email
 
 ## Requirements and Installation
 **Via Cloning The Repository**
