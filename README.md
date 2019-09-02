@@ -7,6 +7,7 @@
 * Users can follow and unfollow each other
 * support to receive email/error logs for bugs while in production and development
 * Users can reset their passwords via email
+* Support for language translation
 
 ## Requirements and Installation
 **Via Cloning The Repository**
@@ -46,6 +47,12 @@ hit a bug
 
 # run tests 
 python tests.py
+
+# generate a new language 
+* flask translate init <language-code>
+update all texts you need to translate to client by calling the language markers _() _l() and pass in the text as arguments:
+* flask translate update
+* flask translate compile
 ```
 
 ## Technologies 
