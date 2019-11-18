@@ -49,10 +49,12 @@ hit a bug
 python tests.py
 
 # generate a new language 
+* pybabel extract -F babel.cfg -k _l -o messages.pot .
 * flask translate init <language-code>
 update all texts you need to translate to client by calling the language markers _() _l() and pass in the text as arguments:
 * flask translate update
 * flask translate compile
+* flask translate --help
 ```
 
 ## Technologies 
