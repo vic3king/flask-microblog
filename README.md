@@ -30,10 +30,10 @@ source venv/bin/activate
 # Install Package dependencies
  pip install -r requirements.txt
 
-# create and setup .env file according to .env.exampl
+# create and setup .flaskenv file according to .env.exampl
 
 # Run migrations
-python manage.py db upgrade 
+flask db upgrade 
 
 #Start the application
 flask run
