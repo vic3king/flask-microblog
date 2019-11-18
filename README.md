@@ -76,4 +76,4 @@ update all texts you need to translate to client by calling the language markers
 
 * **Akaniru victory** - *Initial work* - [Vic3king](https://github.com/vic3king) 
 
-This is spin off of the [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world).
+This is a spin off of the [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world).
