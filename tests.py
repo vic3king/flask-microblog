@@ -10,6 +10,7 @@ class TestConfig(Config):
     TESTING = True
     SQLALCHEMY_DATABASE_URI = 'sqlite://'
 
+
 class UserModelCase(unittest.TestCase):
     def setUp(self):
         self.app = create_app(TestConfig)

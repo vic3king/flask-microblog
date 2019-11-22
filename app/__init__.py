@@ -10,6 +10,7 @@ from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from flask_babel import Babel, lazy_gettext as _l
 import os
+from elasticsearch import Elasticsearch
 
 app = Flask(__name__)
 db = SQLAlchemy()
@@ -26,7 +27,8 @@ babel = Babel()
 def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
-
+    app.elasticsearch = Elasticsearch([app.config['ELASTICSEARCH_URL']]) \
+        if app.config['ELASTICSEARCH_URL'] else None
     db.init_app(app)
     migrate.init_app(app, db)
     login.init_app(app)
@@ -43,6 +45,9 @@ def create_app(config_class=Config):
 
     from app.main import bp as main_bp
     app.register_blueprint(main_bp)
+
+    with app.app_context():
+        db.create_all()
 
     if not app.debug and not app.testing:
         if app.config['MAIL_SERVER']:
